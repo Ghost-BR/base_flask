@@ -14,6 +14,7 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     FLASK_MAIL_SENDER = 'Flask Admin <flask@example.com>'
     FLASK_ADMIN = os.environ.get('FLASK_ADMIN')
+    FLASK_SLOW_DB_QUERY_TIME = 0.5
 
     @classmethod
     def init_app(cls, app):
